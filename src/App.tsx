@@ -4,7 +4,11 @@ function App() {
 
   return (
     <>
-      <img src="https://picsum.photos/400/300" width="400px"/>
+      <picture>
+        <source media="(min-width: 1000px" srcSet="https://picsum.photos/id/5/1200/1200" />
+        <source media="(min-width: 500px" srcSet="https://picsum.photos/id/5/1000/1000" />
+        <img src="https://picsum.photos/id/5/500/500"/>  
+      </picture>
     </>
   )
 }
